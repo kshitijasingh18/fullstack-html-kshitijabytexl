@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bank Balance UI</title>
+<style>
+body {
+  background: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+.centerbox {
+  width: 340px;
+  margin: 100px auto 0 auto;
+  background: #f7f7f7;
+  border-radius: 25px;
+  box-shadow: 0 2px 14px #0001;
+  padding: 48px 0 38px 0;
+  text-align: center;
+}
+.balance {
+  font-size: 2.2em;
+  color: #23913c;
+  font-weight: 500;
+  margin-bottom: 36px;
+  margin-top: 0;
+}
+.btn {
+  display: block;
+  width: 75%;
+  margin: 0 auto 18px auto;
+  padding: 14px 0;
+  font-size: 1.25em;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: filter .2s;
+}
+.btn.deposit {
+  background: #19b33d;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.btn.withdraw {
+  background: #df232a;
+  color: #fff;
+  margin-bottom: 0;
+}
+.btn:active {
+  filter: brightness(.9);
+}
+</style>
+</head>
+<body>
+<div class="centerbox">
+  <div class="balance">$0</div>
+  <button class="btn deposit">Deposit</button>
+  <button class="btn withdraw">Withdraw</button>
+</div>
+</body>
+</html>
