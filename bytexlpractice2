@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Dashboard</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+}
+.header {
+  background: #43b04b;
+  color: #fff;
+  font-size: 1.21em;
+  font-weight: bold;
+  padding: 14px 0 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.header-right {
+  font-weight: normal;
+  font-size: 1em;
+  padding-right: 18px;
+}
+.header input[type="checkbox"] {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.sidebar {
+  background: #ededed;
+  position: fixed;
+  left: 0;
+  top: 48px;
+  bottom: 34px;
+  width: 170px;
+  padding-top: 13px;
+  box-sizing: border-box;
+}
+.menu {
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+.menu li {
+  margin-bottom: 7px;
+}
+.menu a {
+  color: #573acb;
+  text-decoration: underline;
+  font-size: 1em;
+}
+.main {
+  margin-left: 170px;
+  padding: 32px 0 0 34px;
+}
+.main h2 {
+  font-size: 1.10em;
+  font-weight: bold;
+  margin: 0 0 9px 0;
+}
+.main p {
+  color: #50555c;
+  font-size: 1em;
+  margin: 0;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #43b04b;
+  color: #fff;
+  text-align: center;
+  font-size: 1em;
+  padding: 7px 0 5px 0;
+  letter-spacing: .5px;
+}
+@media (max-width: 600px) {
+  .sidebar { width: 80px; }
+  .main { margin-left: 80px; padding-left: 8px;}
+  .menu { padding-left: 7px;}
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <span>Admin Dashboard</span>
+  <span class="header-right"><input type="checkbox" disabled> Dark Mode</span>
+</div>
+<div class="sidebar">
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Users</a></li>
+    <li><a href="#">Settings</a></li>
+  </ul>
+</div>
+<div class="main">
+  <h2>Welcome, Admin!</h2>
+  <p>This is the main content area. Add charts, tables, or reports here.</p>
+</div>
+<div class="footer">&copy; 2025 Admin Panel</div>
+</body>
+</html>
