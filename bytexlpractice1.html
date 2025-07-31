@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Times New Roman, serif;
+        }
+        .form-title {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        label {
+            font-size: 1.5em;
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="number"] {
+            width: 320px;
+            height: 35px;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        input[type="number"] {
+            width: 80px;
+        }
+        .register-btn {
+            margin-top: 15px;
+            width: 110px;
+            height: 38px;
+            font-size: 1.15em;
+        }
+        /* Ensure the number input arrows (spin buttons) are visible in webkit browsers */
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            opacity: 1;
+            -webkit-appearance: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p style="font-size: 1.2em;"><b>Expected Output</b></p>
+        <h1 class="form-title">Student Registration Form</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter your full name" /><br>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter your email" /><br>
+
+            <label for="age">Age:</label>
+            <input id="age" type="number" placeholder="Enter" style="width: 80px;" /><br>
+
+            <button type="submit" class="register-btn"><b>Register</b></button>
+        </form>
+    </div>
+</body>
+</html>
